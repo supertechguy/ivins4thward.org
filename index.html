@@ -19,7 +19,7 @@
                 background-image: url("christ_heals.jpeg");
 
                 /* Make image center */
-                background-position: center center;
+                background-position: center top;
 
                 /* Not repeat images */
                 background-repeat: no-repeat;
@@ -29,29 +29,67 @@
             }
         </style>
         <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-Zenh87qX5JnK2Jl0vWa8Ck2rdkQ2Bzep5IDxbcnCeuOxjzrPF/et3URy9Bv1WTRi" crossorigin="anonymous">
+        <script src="https://code.jquery.com/jquery-3.6.1.min.js" integrity="sha256-o88AwQnZB+VDvE9tvIXrMQaPlFFSUTR+nldQm1LuPXQ=" crossorigin="anonymous"></script>
+        <script type="text/javascript">
+            $(document).ready(function(){
+                    $("#program").load("content/program.txt");
+            });
+        </script>
     </head>
     <body>
         <div class="bg-dark text-secondary px-4 py-5 text-center fronthero">
             <div class="py-5">
-              <br><br><br><br><h1 class="display-5 fw-bold text-white text-shadow">Ivins 4th Ward</h1>
+              <br><br><br><br>
+              <h1 class="display-5 fw-bold text-white text-shadow">Ivins 4th Ward</h1>
               <div class="col-lg-6 mx-auto">
-                <p class="fs-5 mb-4 text-white text-shadow"><em>of</em><br>The Church of Jesus Christ of Latter-Day Saints</p><br><br><br>
+                <p class="fs-5 mb-4 text-white text-shadow"><em>of</em><br>The Church of Jesus Christ of Latter-Day Saints</p>
               </div>
+              <br><br><br><br>
             </div>
-          </div>
+        </div>
 
-          <div class="px-4 py-5 my-5 text-center">
-            <h1 class="display-5 fw-bold">Welcome</h1>
+
+
+        <div class="px-4 py-5 my-5 text-center">
+            <h1 class="display-5 fw-bold">Ward Bulletin</h1>
             <div class="col-lg-6 mx-auto">
-              <p class="lead mb-4">This website is updated by members of the Ivins 4th Ward of the Church of Jesus Christ of Latter-day Saints. It is not an official website of the church, but simply to communicate current lesson topics, service opportunities, and activity information to foster a greater sense of community and to bring people to the Savior, Jesus Christ. For the official website of the church please go to: <a href="http://churchofjesuschrist.org">ChurchOfJesusChrist.org</a></p>
-              <div class="d-grid gap-2 d-sm-flex justify-content-sm-center">
-                <button type="button" class="btn btn-primary btn-lg px-4 gap-3">Ward Bulletin</button>
-                <button type="button" class="btn btn-outline-secondary btn-lg px-4">Online Services</button>
-              </div>
+                <p class="mb-4">Ivins 4th Ward<br>260 East 1060 South<br>IVINS, Utah 84738-6271</p>
+                <p class="mb-4">Sacrament Meeting Begins at 10:30 am</p>
+                <p class="lead mb-4">Sunday Program</p>
+                    <pre><div id="program">content</div></pre>
+                <p class="lead mb-4">Thought</p>
+                    <pre><div id="thought"></div></pre>
+                <p class="lead mb-4">Ward Leadership Contact List</p>
+                    <pre><div id="ward-contact"></div></pre>
+                <p class="lead mb-4">Stake Leadership Contact List</p>
+                    <pre><div id="stake-contact"></div></pre>
+                <p class="lead mb-4">Current Missionaries</p>
+                    <pre><div id="missionaries"></div></pre>
+                <p class="lead mb-4">Meeting Schedule</p>
+                    <pre><div id="schedule"></div></pre>
+                <p class="lead mb-4">Announcements</p>
+                    <pre><div id="announcements"></div></pre>
+
             </div>
-          </div>
+        </div>    
 
 
+
+        <div class="bg-dark text-secondary px-4 py-5 text-center">
+            <div class="py-5">
+              <br><br><br><br>
+              <h1 class="display-5 fw-bold text-white text-shadow">Additional Resources</h1>
+              <div class="col-lg-6 mx-auto">
+                <p class="fs-5 mb-4 text-white text-shadow">This website is maintained by members of the Ivins 4th Ward of the Church of Jesus Christ of Latter-Day Saints. This is not an offical church website, for the official website of the church please go to: <a href="http://churchofjesuschrist.org">ChurchOfJesusChrist.org</a></p>
+                <div class="d-grid gap-2 d-sm-flex justify-content-sm-center">
+                    <!--<button type="button" class="btn btn-primary btn-lg px-4 gap-3">Ward Bulletin</button>-->
+                    <!--<button type="button" class="btn btn-outline-secondary btn-lg px-4">Online Services Streaming</button>-->
+                  </div>  
+                </div>
+              <br><br><br><br>
+            </div>
+        </div>
+      
         <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.6/dist/umd/popper.min.js" integrity="sha384-oBqDVmMz9ATKxIep9tiCxS/Z9fNfEXiDAYTujMAeBAsjFuCZSmKbSSUnQlmh/jp3" crossorigin="anonymous"></script>
         <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/js/bootstrap.min.js" integrity="sha384-IDwe1+LCz02ROU9k972gdyvl+AESN10+x7tBKgc9I5HFtuNz0wWnPclzo6p9vxnk" crossorigin="anonymous"></script>
     </body>
