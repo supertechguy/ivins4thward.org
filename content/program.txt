@@ -5,14 +5,14 @@ Conducting       Brother David Jones
 Chorister        Brother Than Johnson
 Organist         Brother Jake Nielsen
 
-Opening Hymn     9 - “Come, Rejoice"
+Opening Hymn     #9 - “Come, Rejoice"
  
 Invocation       Sister Amanda Campbell
  
 Stake Business 
 Ward Business 
  
-Sacrament Hymn   186 - “Again We Meet Around The Board"
+Sacrament Hymn   #186 - “Again We Meet Around The Board"
 
 Sacrament Administered by the Holders of the Aaronic Priesthood 
  
@@ -20,6 +20,6 @@ Speakers         Brother Dennis Lemke
 Speakers         Brother Jake Neilson
 Speakers         President Shad Johnsen
  
-Closing Hymn     134 - "I Believe In Christ"
+Closing Hymn     #134 - "I Believe In Christ"
                   
 Benediction      Brother Calvin Jensen
