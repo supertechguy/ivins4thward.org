@@ -1,0 +1,93 @@
+<!doctype html>
+<html>
+    <head>
+        <title>Ivins 4th Ward of The Church of Jesus Christ of Latter-Day Saints</title>
+        <style>
+            body {
+              font-family: 'Source Sans Pro';
+            }
+
+            pre {
+                overflow-x: auto;
+                white-space: pre-wrap;
+                white-space: -moz-pre-wrap;
+                white-space: -pre-wrap;
+                white-space: -o-pre-wrap;
+                word-wrap: break-word;
+                font-size: 12px;
+            }
+            .title
+            {
+                font-size: 14pt;
+            }
+
+            .top-title
+            {
+                font-size: 18pt;
+            }
+
+            .print
+            {
+                font-size: 12px;
+            }
+        </style>
+        <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.9.1/font/bootstrap-icons.css">
+        <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-Zenh87qX5JnK2Jl0vWa8Ck2rdkQ2Bzep5IDxbcnCeuOxjzrPF/et3URy9Bv1WTRi" crossorigin="anonymous">
+        <script src="https://code.jquery.com/jquery-3.6.1.min.js" integrity="sha256-o88AwQnZB+VDvE9tvIXrMQaPlFFSUTR+nldQm1LuPXQ=" crossorigin="anonymous"></script>
+        <script type="text/javascript">
+            $(document).ready(function(){
+                    $("#program").load("content/program.txt");
+                    $("#thought").load("content/thought.txt");
+                    $("#missionaries").load("content/missionaries.txt");
+                    $("#schedule").load("content/schedule.txt");
+                    $("#announcements").load("content/announcements.txt");
+            });
+        </script>
+    </head>
+    <body>
+        <div class="container">
+            <div class="row">
+                <div class="col-12 text-center">
+                    <h1 class="top-title">Ivins 4th Ward</h1>
+                    <p><em>of</em><br>The Church of Jesus Christ of Latter-Day Saints</p>
+                    <p class="print">Ivins 4th Ward<br>260 East 1060 South<br>IVINS, Utah 84738-6271</p>
+                    <p class="print">Sacrament Meeting Begins at 12:00 pm</p>
+                </div>
+            </div>
+            <div class="row">
+                <div class="col-6 text-center">
+                    <h2 class="title">Announcements</h2>
+                    <pre><div id="announcements">content</div></pre>
+                </div>
+                
+                <div class="col-6 text-center">
+                    <h2 class="title">Sunday Program</h2>
+                    <pre><div id="program">content</div></pre>
+                </div>
+            </div>
+            <div class="row">
+                <div class="col-6 text-center">
+                    <h2 class="title">Current Missionaries</h2>
+                    <pre><div id="missionaries">content</div></pre>
+                </div>
+                <div class="col-6 text-center">
+                    <h2 class="title">Meeting Schedule</h2>
+                    <pre><div id="schedule">content</div></pre>
+                </div>
+            </div>
+            <div class="row">
+                <div class="col-12 text-center">
+                    <h2 class="title">Thought</h2>
+                    <pre><div id="thought">content</div></pre>
+                </div>
+            </div>
+            <div class="row">
+                <div class="col-12 text-center">
+                    <p class="mb-4">For announcements for the Sunday bulletin please email Jon Hindes at <a href="mailto:jbhindes@gmail.com">jbhindes@gmail.com</a> by Thursday night</a></p>
+                </div>
+            </div>
+        </div>
+        <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.6/dist/umd/popper.min.js" integrity="sha384-oBqDVmMz9ATKxIep9tiCxS/Z9fNfEXiDAYTujMAeBAsjFuCZSmKbSSUnQlmh/jp3" crossorigin="anonymous"></script>
+        <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/js/bootstrap.min.js" integrity="sha384-IDwe1+LCz02ROU9k972gdyvl+AESN10+x7tBKgc9I5HFtuNz0wWnPclzo6p9vxnk" crossorigin="anonymous"></script>
+    </body>
+</html>
