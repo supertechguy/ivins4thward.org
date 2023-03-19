@@ -58,7 +58,7 @@
                     $("#missionaries").load("content/missionaries.txt");
                     $("#schedule").load("content/schedule.txt");
                     $("#announcements").load("content/announcements.txt");
-                    window.print();
+                    delay(1000).then(() => window.print());
             });
         </script>
     </head>
