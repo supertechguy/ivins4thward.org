@@ -53,18 +53,12 @@
         <script src="https://code.jquery.com/jquery-3.6.1.min.js" integrity="sha256-o88AwQnZB+VDvE9tvIXrMQaPlFFSUTR+nldQm1LuPXQ=" crossorigin="anonymous"></script>
         <script type="text/javascript">
             $(document).ready(function(){
-                    $("#program").load("content/program.txt"), function() {
-                        $("#thought").load("content/thought.txt"), function() {
-                            $("#missionaries").load("content/missionaries.txt"), function() {
-                                $("#schedule").load("content/schedule.txt"), function() {
-                                    $("#announcements").load("content/announcements.txt"), function () {
-                                        window.print();
-                                    });
-                                });
-                            });
-                        });
-                    });
-            });
+                    $("#program").load("content/program.txt");
+                    $("#thought").load("content/thought.txt");
+                    $("#missionaries").load("content/missionaries.txt");
+                    $("#schedule").load("content/schedule.txt");
+                    $("#announcements").load("content/announcements.txt");
+            }); 
         </script>
     </head>
     <body>
