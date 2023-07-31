@@ -58,9 +58,12 @@
                     // Get the content
                     var str = $("#announcements").html();
                     // Set the regex string
+                    alert(str);
                     var regex = /(https?:\/\/([-\w\.]+)+(:\d+)?(\/([\w\/_\.]*(\?\S+)?)?)?)/ig
+                    alert(regex);
                     // Replace plain text links by hyperlinks
                     var replaced_text = str.replace(regex, "<a href='$1' target='_blank'>$1</a>");
+                    alert(replaced_text);
                     // Echo link
                     $("#announcements").replaceWith(replaced_text);
             });
