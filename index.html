@@ -55,8 +55,7 @@
                     $("#schedule").load("content/schedule.txt");
                     //$("#announcements").load("content/announcements.txt");
                     var str;
-                    $.get("content/announcements.txt", function( str ) {
-                    });
+                    $.get("content/announcements.txt", function( str ), 'html');
                     alert(str);
                     var regex = /(https?:\/\/([-\w\.]+)+(:\d+)?(\/([\w\/_\.]*(\?\S+)?)?)?)/ig
                     var replaced_text = str.replace(regex, "<a href='$1' target='_blank'>$1</a>");
