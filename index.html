@@ -89,8 +89,7 @@
                     $("#schedule").load("content/schedule.txt");
                     //$("#announcements").load("content/announcements.txt");
                     //$("#announcements").autolink();
-                    var announcementcontent;
-                    announcementcontent.load("content/announcements.txt");
+                    $("#announcements").load("content/announcements.txt",announcementcontent);
                     announcementcontent.autoLink();
                     $("#announcements").html(announcementcontent);
 
