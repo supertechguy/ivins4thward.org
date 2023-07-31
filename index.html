@@ -54,6 +54,15 @@
                     $("#missionaries").load("content/missionaries.txt");
                     $("#schedule").load("content/schedule.txt");
                     $("#announcements").load("content/announcements.txt");
+
+                    // Get the content
+                    var str = $("#announcements").html();
+                    // Set the regex string
+                    var regex = /(https?:\/\/([-\w\.]+)+(:\d+)?(\/([\w\/_\.]*(\?\S+)?)?)?)/ig
+                    // Replace plain text links by hyperlinks
+                    var replaced_text = str.replace(regex, "<a href='$1' target='_blank'>$1</a>");
+                    // Echo link
+                    $("#announcements").html(replaced_text);
             });
         </script>
     </head>
