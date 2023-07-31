@@ -54,8 +54,12 @@
                     $("#thought").load("content/thought.txt");
                     $("#missionaries").load("content/missionaries.txt");
                     $("#schedule").load("content/schedule.txt");
-                    $("#announcements").load("content/announcements.txt");
-                    $("#announcements").autolink();
+                    //$("#announcements").load("content/announcements.txt");
+                    //$("#announcements").autolink();
+                    $.ajax({url: "content/announcements.txt", success: function(result){
+                      result.autolink();
+                      $("#announcements").html(result);
+                    }})
             });
         </script>
     </head>
