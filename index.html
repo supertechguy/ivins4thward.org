@@ -48,40 +48,6 @@
         <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-Zenh87qX5JnK2Jl0vWa8Ck2rdkQ2Bzep5IDxbcnCeuOxjzrPF/et3URy9Bv1WTRi" crossorigin="anonymous">
         <script src="https://code.jquery.com/jquery-3.6.1.min.js" integrity="sha256-o88AwQnZB+VDvE9tvIXrMQaPlFFSUTR+nldQm1LuPXQ=" crossorigin="anonymous"></script>
         <script type="text/javascript">
-              (function() {
-                var autoLink,
-                  slice = [].slice;
-
-                autoLink = function() {
-                  var callback, k, linkAttributes, option, options, pattern, v;
-                  options = 1 <= arguments.length ? slice.call(arguments, 0) : [];
-                  pattern = /(^|[\s\n]|<[A-Za-z]*\/?>)((?:https?|ftp):\/\/[\-A-Z0-9+\u0026\u2019@#\/%?=()~_|!:,.;]*[\-A-Z0-9+\u0026@#\/%=~()_|])/gi;
-                  if (!(options.length > 0)) {
-                    return this.replace(pattern, "$1<a href='$2'>$2</a>");
-                  }
-                  option = options[0];
-                  callback = option["callback"];
-                  linkAttributes = ((function() {
-                    var results;
-                    results = [];
-                    for (k in option) {
-                      v = option[k];
-                      if (k !== 'callback') {
-                        results.push(" " + k + "='" + v + "'");
-                      }
-                    }
-                    return results;
-                  })()).join('');
-                  return this.replace(pattern, function(match, space, url) {
-                    var link;
-                    link = (typeof callback === "function" ? callback(url) : void 0) || ("<a href='" + url + "'" + linkAttributes + ">" + url + "</a>");
-                    return "" + space + link;
-                  });
-                };
-
-                String.prototype['autoLink'] = autoLink;
-
-              }).call(this);
             $(document).ready(function(){
                     $("#program").load("content/program.txt");
                     $("#thought").load("content/thought.txt");
@@ -92,6 +58,7 @@
                     var announcementcontent;
                     $("#announcements").load("content/announcements.txt",announcementcontent);
                     announcementcontent.autoLink();
+                    announcementcontent="stuff";
                     $("#announcements").html(announcementcontent);
 
             });
