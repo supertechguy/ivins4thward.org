@@ -53,17 +53,17 @@
                     $("#thought").load("content/thought.txt");
                     $("#missionaries").load("content/missionaries.txt");
                     $("#schedule").load("content/schedule.txt");
-                    $("#announcements").load("content/announcements.txt");
-
-                    // Get the content
+                    //$("#announcements").load("content/announcements.txt");
+                    var str;
+                    $.get("content/announcements.txt", function( str ) {
+                      // my_var contains whatever that request returned
+                    });
                     var str = $("#announcements").html();
                     // Set the regex string
                     alert(str);
                     var regex = /(https?:\/\/([-\w\.]+)+(:\d+)?(\/([\w\/_\.]*(\?\S+)?)?)?)/ig
-                    alert(regex);
                     // Replace plain text links by hyperlinks
                     var replaced_text = str.replace(regex, "<a href='$1' target='_blank'>$1</a>");
-                    replaced_text="blah";
                     alert(replaced_text);
                     // Echo link
                     $("#announcements").replaceWith(replaced_text);
