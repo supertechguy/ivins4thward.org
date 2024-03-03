@@ -64,6 +64,14 @@
             {
                 page-break-after:always;
             }
+            .center-on-printed-page
+            {
+                display: flex;
+                align-items: center;
+                justify-content: center;
+                width: 100%;
+                height: 100vh;
+            }
         </style>
         <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.9.1/font/bootstrap-icons.css">
         <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-Zenh87qX5JnK2Jl0vWa8Ck2rdkQ2Bzep5IDxbcnCeuOxjzrPF/et3URy9Bv1WTRi" crossorigin="anonymous">
@@ -107,7 +115,7 @@
                     <p class="print"><img width="100px" src="ivins4thward.png"></p>
                 </div>
             </div>
-            <div class="row break-before">
+            <div class="row break-before centered-on-printed-page">
                 <div class="col-12 text-center">
                     <h1 class="top-title">Ivins 4th Ward</h1>
                     <p class="print-large"><em>of</em><br><b>The Church of Jesus Christ of Latter-Day Saints</b></p>
