@@ -32,16 +32,19 @@
             {
                 font-size: 12px;
                 margin: 0px !important;
+                page-break-inside:avoid;
             }
 
             .print-small
             {
                 font-size: 10px;
+                page-break-inside:avoid;
             }
 
             .print-lage
             {
                 font-size: 14px;
+                page-break-inside:avoid;
             }
 
             .qrcode
@@ -52,7 +55,11 @@
                 height: 75px;
                 width: 75px;
             }
-            .break
+            .break-before
+            {
+                page-break-before:always;
+            }
+            .break-after
             {
                 page-break-after:always;
             }
@@ -78,24 +85,28 @@
         <div class="container">
             <div class="row">
                 <div class="col-12 text-center">
+                    <p class="print">For the full program please visit www.ivins4thward.org</p>
+                    <p class="print"><img src="ivins4thward.png"></p>
+            <div class="row break-before">
+                <div class="col-12 text-center">
                     <h1 class="top-title">Ivins 4th Ward</h1>
                     <p class="print"><em>of</em><br><b>The Church of Jesus Christ of Latter-Day Saints</b></p>
                     <p class="print">260 East 1060 South IVINS, Utah 84738-6271 | www.ivins4thward.org</p>
                     <p class="print">Sacrament Meeting Begins at 12:00 pm</p><br>
+                    <p class="print"><img src="christ_heals.jpeg"></p>
                 </div>
             </div>
-            <div class="row">
-
-                
-                <div class="col-6 break">
+            <div class="row break-before">
+                <div class="col-6">
                     <h2 class="title">Sunday Program</h2>
                     <pre class="print"><div id="program">content</div></pre>
                 </div>
-                <div class="col-6 break">    
+                <div class="col-6">    
                     <h2 class="title">Current Missionaries</h2>
-                    <pre class="print-small"><div id="missionaries">content</div></pre>
+                    <pre class="print"><div id="missionaries">content</div></pre>
                 </div>
-
+            </div>
+            <div class="row break-before">
                 <div class="col-12 text-center">
                     <h2 class="title">Announcements</h2>
                     <pre class="print-small"><div id="announcements">content</div></pre>
@@ -107,7 +118,7 @@
                 </div>
             </div>
         </div>
-        <img class="qrcode" src="ivins4thward.png">
+        <!--<img class="qrcode" src="ivins4thward.png">-->
         <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.6/dist/umd/popper.min.js" integrity="sha384-oBqDVmMz9ATKxIep9tiCxS/Z9fNfEXiDAYTujMAeBAsjFuCZSmKbSSUnQlmh/jp3" crossorigin="anonymous"></script>
         <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/js/bootstrap.min.js" integrity="sha384-IDwe1+LCz02ROU9k972gdyvl+AESN10+x7tBKgc9I5HFtuNz0wWnPclzo6p9vxnk" crossorigin="anonymous"></script>
     </body>
