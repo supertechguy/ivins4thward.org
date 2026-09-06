@@ -53,4 +53,4 @@ npm run build    # full build -> _site/ (site + bulletin PDFs)
 - `scripts/build-pdf.mjs` — renders the two PDFs with headless Chrome + pdf-lib
 - `admin/` — Sveltia CMS
 
-See [`docs/ROLLOUT.md`](docs/ROLLOUT.md) for the one-time setup on Cloudflare and GitHub.
+See [`docs/ROLLOUT.md`](docs/ROLLOUT.md) for one-time setup on Cloudflare and GitHub, and [`docs/HISTORY.md`](docs/HISTORY.md) for why the site is built this way.
