@@ -1,0 +1,19 @@
+{
+  "date": "2026-09-06",
+  "presiding": "Bishop Jake Nielsen",
+  "conducting": "Brother Barry Verespey",
+  "chorister": "Brother Than Johnson",
+  "organist": "Sister Jaime Nielsen",
+  "openingHymn": { "number": "252", "title": "Put Your Shoulder to the Wheel" },
+  "invocation": "Brother Jim Lutes",
+  "stakeBusiness": true,
+  "wardBusiness": true,
+  "sacramentHymn": { "number": "1008", "title": "Bread of Life, Living Water" },
+  "testimonyMeeting": true,
+  "speakersBeforeHymn": [],
+  "intermediateHymn": { "number": "", "title": "" },
+  "musicalNumber": "",
+  "speakersAfterHymn": [],
+  "closingHymn": { "number": "223", "title": "Have I Done Any Good" },
+  "benediction": "Sister Brielle Broadhead"
+}
