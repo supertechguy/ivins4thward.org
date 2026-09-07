@@ -8,7 +8,7 @@ backend:
   branch: main
   # Deploy sveltia-cms-auth as a Cloudflare Worker (step 5 of the rollout) and
   # put its URL here, e.g. https://ivins4thward-cms-auth.<subdomain>.workers.dev
-  base_url: https://REPLACE-WITH-CMS-AUTH-WORKER-URL
+  base_url: https://sveltia-cms-auth.jer-76d.workers.dev
 
 # Images live alongside the other source files.
 media_folder: "src"
