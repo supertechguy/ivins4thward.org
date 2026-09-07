@@ -31,7 +31,7 @@ collections:
         file: "src/_data/program.json"
         description: "Fill in the fields for this Sunday. Leave anything unused blank."
         fields:
-          - { name: date, label: "Sunday date", widget: date, format: "YYYY-MM-DD" }
+          - { name: date, label: "Sunday date", widget: datetime, type: date }
           - { name: presiding, label: Presiding, widget: string, required: false }
           - { name: conducting, label: Conducting, widget: string, required: false }
           - { name: chorister, label: Chorister, widget: string, required: false }
