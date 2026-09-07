@@ -1,0 +1,9 @@
+# Cloudflare Pages headers.
+/admin/*
+  X-Robots-Tag: noindex
+
+# Always fetch the freshest bulletin after a rebuild.
+/bulletin.pdf
+  Cache-Control: no-cache
+/bulletin-flat.pdf
+  Cache-Control: no-cache

@@ -1,0 +1,50 @@
+/* Ivins 4th Ward — web bulletin styles (layered on top of Bootstrap) */
+
+body { font-family: "Source Sans Pro", system-ui, -apple-system, "Segoe UI", Roboto, sans-serif; }
+
+.text-shadow { text-shadow: 1px 1px 4px black; }
+
+.fronthero {
+  background-image: url("/christ_heals.jpeg");
+  background-position: center top;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+/* --- Shared content blocks (replaces the old <pre> rendering) --- */
+.content-block { max-width: 46rem; }
+.content-block p { margin-bottom: 0.85rem; }
+.content-block ul { margin-bottom: 0.85rem; }
+.content-block blockquote {
+  border-left: 3px solid #adb5bd;
+  padding-left: 1rem;
+  margin-left: 0;
+  font-style: italic;
+  color: #343a40;
+}
+
+/* --- Sacrament meeting program --- */
+.program { max-width: 34rem; }
+.pg-date { font-weight: 700; margin-bottom: 1rem; }
+.pg-group { margin-bottom: 1rem; }
+.pg-row {
+  display: grid;
+  grid-template-columns: 9.5rem 1fr;
+  gap: 0.25rem 0.75rem;
+  padding: 0.1rem 0;
+}
+.pg-label { font-weight: 600; }
+.pg-detail { }
+.pg-note { margin: 0.35rem 0 0; font-style: italic; color: #495057; }
+.pg-note--center { text-align: center; font-style: normal; font-weight: 600; }
+
+@media (max-width: 30rem) {
+  .pg-row { grid-template-columns: 1fr; gap: 0; }
+  .pg-label { margin-top: 0.4rem; }
+}
+
+/* --- Missionaries --- */
+.missionary { margin-bottom: 0.9rem; }
+.missionary p { margin: 0; }
+.missionary__name { font-weight: 600; }
+.missionary__stake { margin-top: 1rem; font-style: italic; }

@@ -1,0 +1,124 @@
+---
+permalink: /_bulletin/pages.html
+eleventyExcludeFromCollections: true
+---
+{% from "macros.njk" import programBlock %}
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<title>{{ site.title }} Bulletin</title>
+<style>
+  @page { size: 5.5in 8.5in; margin: 0; }
+  * { box-sizing: border-box; }
+  html, body { margin: 0; padding: 0; }
+  body {
+    font-family: "Source Serif 4", Georgia, "Times New Roman", serif;
+    color: #000;
+    font-size: 10pt;
+    line-height: 1.32;
+  }
+  a { color: #000; text-decoration: none; word-break: break-word; }
+
+  /* Fixed-size panels for the cover and program (never allowed to spill). */
+  .panel {
+    width: 5.5in;
+    height: 8.5in;
+    padding: 0.45in 0.4in;
+    overflow: hidden;
+    page-break-after: always;
+  }
+
+  h2 { margin: 0 0 .35em; line-height: 1.15; }
+  .section-title {
+    font-size: 13pt;
+    text-align: center;
+    border-bottom: 1.5pt solid #000;
+    padding-bottom: 3pt;
+    margin-bottom: 8pt;
+    letter-spacing: .02em;
+  }
+
+  /* ---- Front cover ---- */
+  .cover { text-align: center; display: flex; flex-direction: column; }
+  .cover__name { font-size: 26pt; font-weight: 700; margin: .15in 0 0; }
+  .cover__of { font-size: 11pt; font-style: italic; margin: 2pt 0; }
+  .cover__church { font-size: 12pt; font-weight: 700; margin: 0; }
+  .cover__img { margin: 16pt auto; max-width: 3.3in; max-height: 3.5in; }
+  .cover__meta { margin-top: auto; font-size: 10pt; }
+  .cover__meta p { margin: 2pt 0; }
+
+  /* ---- Program ---- */
+  .pg-date { font-weight: 700; text-align: center; margin-bottom: 8pt; }
+  .pg-group { margin-bottom: 7pt; }
+  .pg-row { display: grid; grid-template-columns: 1.35in 1fr; gap: 1pt 6pt; padding: .5pt 0; }
+  .pg-label { font-weight: 700; }
+  .pg-note { margin: 3pt 0 0; font-style: italic; font-size: 9pt; }
+  .pg-note--center { text-align: center; font-style: normal; font-weight: 700; }
+
+  /* ---- Announcements: two columns, flows across panels 3 and 4 ---- */
+  .announce-panel { padding: 0.45in 0.4in 0; }
+  .announce {
+    columns: 2;
+    column-gap: 0.28in;
+    font-size: 8.5pt;
+    line-height: 1.27;
+    text-align: left;
+    orphans: 2;
+    widows: 2;
+  }
+  .announce p { margin: 0 0 5pt; break-inside: avoid; }
+  .announce ul { margin: 0 0 5pt; padding-left: 1.05em; break-inside: avoid; }
+  .announce li { margin-bottom: 1pt; }
+
+  /* ---- Back cover ---- */
+  .back { page-break-before: always; }
+  .back__inner { display: flex; flex-direction: column; height: 100%; text-align: center; }
+  .back__thought { margin: auto 0; font-size: 10pt; }
+  .back__thought blockquote { font-style: italic; margin: 0 0 8pt; }
+  .back__foot { font-size: 7.5pt; word-break: break-all; margin: 0; }
+</style>
+</head>
+<body>
+
+  {# Panel 1 — front cover #}
+  <section class="panel cover">
+    <div>
+      <p class="cover__name">{{ site.title }}</p>
+      <p class="cover__of">of</p>
+      <p class="cover__church">{{ site.church }}</p>
+    </div>
+    <img class="cover__img" src="/christ_heals.jpeg" alt="">
+    <div class="cover__meta">
+      <p><strong>{{ program.date | bulletinDate }}</strong></p>
+      <p>Sacrament Meeting begins at {{ site.sacramentTime }}</p>
+      <p>{{ site.address }}</p>
+      <p>{{ site.url | replace("https://", "") }}</p>
+    </div>
+  </section>
+
+  {# Panel 2 — sacrament meeting program #}
+  <section class="panel">
+    <h2 class="section-title">Sacrament Meeting Program</h2>
+    {{ programBlock(program) }}
+  </section>
+
+  {# Panel 3 — announcements (two columns; continues onto the back panel if long) #}
+  <div class="announce-panel">
+    <h2 class="section-title">Announcements</h2>
+    <div class="announce">{{ copy.announcements | safe }}</div>
+  </div>
+
+  {# Panel 4 — back cover #}
+  <section class="panel back">
+    <div class="back__inner">
+      <div class="back__thought">{{ copy.thought | safe }}</div>
+      <p class="back__foot">
+        {{ site.title }} &nbsp;&middot;&nbsp; {{ site.url | replace("https://", "") }}<br>
+        Submit an announcement at {{ site.url | replace("https://", "") }}/submit
+      </p>
+    </div>
+  </section>
+
+</body>
+</html>

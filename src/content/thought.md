@@ -1,0 +1,3 @@
+> The path of discipleship often resembles climbing a mountain. The shortest path to the top is not always the most appropriate and often not the safest either. Thus, we must choose the firm and safe path, even if it is sometimes the longest and most demanding one. Jesus Christ and His restored gospel constitute that safe path that leads us to the true summit.
+
+— Elder Eduardo F. Ortega, Of the Seventy — General Conference, April 2026

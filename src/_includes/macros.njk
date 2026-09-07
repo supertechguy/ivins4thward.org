@@ -1,0 +1,82 @@
+{# ---------------------------------------------------------------------------
+   programBlock — renders the sacrament meeting program from structured data.
+   Used by the web bulletin, the print page, and the printed PDF so the three
+   never drift apart.
+--------------------------------------------------------------------------- #}
+{% macro hymn(h) -%}
+  {%- if h and h.number -%}#{{ h.number }} &ldquo;{{ h.title }}&rdquo;{%- elif h and h.title -%}&ldquo;{{ h.title }}&rdquo;{%- endif -%}
+{%- endmacro %}
+
+{% macro row(label, detail) -%}
+  <div class="pg-row">
+    <span class="pg-label">{{ label }}</span>
+    <span class="pg-detail">{{ detail | safe }}</span>
+  </div>
+{%- endmacro %}
+
+{% macro speakers(list) -%}
+  {%- for s in list -%}
+    {{ row("Speaker" if list.length == 1 else ("Youth Speaker" if s.youth else "Speaker"), s.name) }}
+  {%- endfor -%}
+{%- endmacro %}
+
+{% macro programBlock(program) %}
+<div class="program">
+  <p class="pg-date">{{ program.date | bulletinDate }}</p>
+
+  <div class="pg-group">
+    {{ row("Presiding", program.presiding) }}
+    {{ row("Conducting", program.conducting) }}
+    {{ row("Chorister", program.chorister) }}
+    {{ row("Organist", program.organist) }}
+  </div>
+
+  <div class="pg-group">
+    {{ row("Opening Hymn", hymn(program.openingHymn)) }}
+    {{ row("Invocation", program.invocation) }}
+    {% if program.stakeBusiness %}{{ row("Stake Business", "") }}{% endif %}
+    {% if program.wardBusiness %}{{ row("Ward Business", "") }}{% endif %}
+  </div>
+
+  <div class="pg-group">
+    {{ row("Sacrament Hymn", hymn(program.sacramentHymn)) }}
+    <p class="pg-note">Sacrament administered by the holders of the Aaronic Priesthood</p>
+  </div>
+
+  <div class="pg-group">
+    {% if program.testimonyMeeting %}
+      <p class="pg-note pg-note--center">Bearing of Testimonies</p>
+    {% else %}
+      {{ speakers(program.speakersBeforeHymn) }}
+      {% if program.intermediateHymn and program.intermediateHymn.number %}
+        {{ row("Intermediate Hymn", hymn(program.intermediateHymn)) }}
+      {% elif program.musicalNumber %}
+        {{ row("Musical Number", program.musicalNumber) }}
+      {% endif %}
+      {{ speakers(program.speakersAfterHymn) }}
+    {% endif %}
+  </div>
+
+  <div class="pg-group">
+    {{ row("Closing Hymn", hymn(program.closingHymn)) }}
+    {{ row("Benediction", program.benediction) }}
+  </div>
+</div>
+{% endmacro %}
+
+
+{# ---------------------------------------------------------------------------
+   missionariesBlock — current full-time missionaries serving from the ward.
+--------------------------------------------------------------------------- #}
+{% macro missionariesBlock(missionaries) %}
+<div class="missionaries">
+  {% for m in missionaries.list %}
+    <div class="missionary">
+      <p class="missionary__name">{{ m.name }}</p>
+      <p class="missionary__mission">{{ m.mission }}</p>
+      {% if m.email %}<p class="missionary__email"><a href="mailto:{{ m.email }}">{{ m.email }}</a></p>{% endif %}
+    </div>
+  {% endfor %}
+  {% if missionaries.stakeContact %}<p class="missionary__stake">{{ missionaries.stakeContact }}</p>{% endif %}
+</div>
+{% endmacro %}

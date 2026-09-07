@@ -1,0 +1,81 @@
+---
+layout: base.njk
+permalink: /index.html
+---
+{% from "macros.njk" import programBlock, missionariesBlock %}
+
+<div class="bg-dark text-secondary px-4 py-5 text-center fronthero">
+  <div class="py-5">
+    <br><br><br><br>
+    <h1 class="display-5 fw-bold text-white text-shadow">{{ site.title }}</h1>
+    <div class="col-lg-6 mx-auto">
+      <p class="fs-5 mb-4 text-white text-shadow"><em>of</em><br>{{ site.church }}</p>
+    </div>
+    <br><br><br><br>
+  </div>
+</div>
+
+<div class="container col-xxl-8 px-4 py-5">
+  <div class="row flex-lg-row-reverse align-items-center g-5 py-5">
+    <div class="col-lg">
+      <h1 class="display-5 fw-bold lh-1 mb-3">Ward Bulletin</h1>
+      <p class="mb-4">{{ site.title }}<br>{{ site.address }}</p>
+      <p class="mb-4">Sacrament Meeting Begins at {{ site.sacramentTime }}</p>
+
+      <p class="mb-1">
+        <a class="btn btn-secondary px-4" href="/bulletin.pdf">
+          <i class="bi bi-printer-fill"></i>&nbsp; Print this week's bulletin
+        </a>
+      </p>
+      <p class="mb-4"><small class="text-muted">Half-fold booklet. Print double-sided, flip on short edge, fold in half. <a href="/bulletin-flat.pdf">Plain 2-page version</a>.</small></p>
+
+      <h2 class="display-8 fw-bold lh-1 mb-3"><i class="bi-megaphone"></i>&nbsp;Announcements</h2>
+      <div class="content-block mb-4">{{ copy.announcements | safe }}</div>
+
+      <h2 class="display-8 fw-bold lh-1 mb-3"><i class="bi-card-list"></i>&nbsp;Sunday Program</h2>
+      {{ programBlock(program) }}
+
+      <h2 class="display-8 fw-bold lh-1 mb-3 mt-4"><i class="bi-share"></i>&nbsp;Current Missionaries</h2>
+      {{ missionariesBlock(missionaries) }}
+
+      <h2 class="display-8 fw-bold lh-1 mb-3 mt-4"><i class="bi-table"></i>&nbsp;Meeting Schedule</h2>
+      <div class="content-block mb-4">{{ copy.schedule | safe }}</div>
+
+      <h2 class="display-8 fw-bold lh-1 mb-3"><i class="bi-chat-right-dots"></i>&nbsp;Thought</h2>
+      <div class="content-block mb-4">{{ copy.thought | safe }}</div>
+
+      <h2 class="display-8 fw-bold lh-1 mb-3"><i class="bi bi-clipboard-heart"></i>&nbsp;Ward Mission</h2>
+      <p class="display-8 fw-bold mb-3"><a href="{{ site.missionPlanUrl }}">Ward Mission Plan</a></p>
+      <p class="mb-4">Check out <a href="{{ site.missionaryIdeasUrl }}">Missionary Opportunity Ideas</a></p>
+
+      <h2 class="display-8 fw-bold lh-1 mb-3"><span class="bi-postcard"></span>&nbsp;Contact Information</h2>
+      <p class="mb-4">For contact information please see the Tools app below or <a href="https://id.churchofjesuschrist.org/">login to your church account.</a></p>
+      <p class="mb-4">For announcements for the Sunday bulletin please email {{ site.announcementsContact.name }} at <a href="mailto:{{ site.announcementsContact.email }}">{{ site.announcementsContact.email }}</a> by {{ site.announcementsContact.deadline }}, or use the <a href="{{ site.submissionFormUrl }}">submission form</a>.</p>
+    </div>
+  </div>
+</div>
+
+<div class="bg-dark text-secondary px-4 py-5 text-center">
+  <div class="py-5">
+    <br><br><br><br>
+    <h1 class="display-5 fw-bold text-white text-shadow">Additional Resources</h1>
+    <div class="col-lg-6 mx-auto">
+      <p class="fs-5 mb-4 text-white text-shadow">This website is maintained by members of the {{ site.title }} of {{ site.church }}. This is not an official church website; for the official website of the Church please go to: <a href="https://churchofjesuschrist.org">ChurchOfJesusChrist.org</a></p>
+      <div class="d-grid gap-2 d-sm-flex justify-content-sm-center">
+        <a class="btn btn-primary btn-lg px-4 gap-3" href="https://itunes.apple.com/us/app/lds-tools/id391093033?mt=8&at=1001lJ5"><i class="bi bi-apple"></i>&nbsp; Church Tools</a>
+        <a class="btn btn-primary btn-lg px-4 gap-3" href="https://market.android.com/details?id=org.lds.ldstools"><i class="bi bi-android2"></i>&nbsp; Church Tools</a>
+      </div>
+      <br>
+      <div class="d-grid gap-2 d-sm-flex justify-content-sm-center">
+        <a class="btn btn-success btn-lg px-4 gap-3" href="https://www.facebook.com/groups/2155564908090617"><i class="bi bi-facebook"></i>&nbsp; Facebook</a>
+        <a class="btn btn-success btn-lg px-4 gap-3" href="https://apps.apple.com/us/app/gospel-living/id1245330433"><i class="bi bi-apple"></i>&nbsp; Circles</a>
+        <a class="btn btn-success btn-lg px-4 gap-3" href="https://play.google.com/store/apps/details?id=org.lds.liv&hl=en_US&gl=US&pli=1"><i class="bi bi-android2"></i>&nbsp; Circles</a>
+      </div>
+      <br>
+      <div class="d-grid gap-2 d-sm-flex justify-content-sm-center">
+        <a class="btn btn-secondary btn-lg px-4 gap-3" href="/bulletin.pdf"><i class="bi bi-printer-fill"></i>&nbsp; Print</a>
+      </div>
+    </div>
+    <br><br><br><br>
+  </div>
+</div>

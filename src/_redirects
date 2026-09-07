@@ -1,0 +1,3 @@
+# Cloudflare Pages redirects — short links for print material.
+/submit   https://docs.google.com/forms/d/e/1FAIpQLScta7vB7caakWMQnV-SU61Ak53e3FBxDQQ7UJWks2FJQg6YHQ/viewform   302
+/print    /bulletin.pdf   302

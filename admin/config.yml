@@ -1,0 +1,158 @@
+# Sveltia CMS configuration.
+# Editors visit /admin, sign in with GitHub, and everything they save is
+# committed straight to this repo. Cloudflare Pages rebuilds automatically.
+
+backend:
+  name: github
+  repo: supertechguy/ivins4thward.org
+  branch: main
+  # Deploy sveltia-cms-auth as a Cloudflare Worker (step 5 of the rollout) and
+  # put its URL here, e.g. https://ivins4thward-cms-auth.<subdomain>.workers.dev
+  base_url: https://sveltia-cms-auth.jer-76d.workers.dev
+
+# Images live alongside the other source files.
+media_folder: "src"
+public_folder: "/"
+
+# Show a "Live site" link and an in-CMS preview.
+site_url: https://www.ivins4thward.org
+
+collections:
+  # ----------------------------------------------------------------------
+  - name: program
+    label: "Sunday Program"
+    label_singular: "Program"
+    delete: false
+    editor:
+      preview: false
+    files:
+      - name: program
+        label: "This Week's Program"
+        file: "src/_data/program.json"
+        description: "Fill in the fields for this Sunday. Leave anything unused blank."
+        fields:
+          - { name: date, label: "Sunday date", widget: date, format: "YYYY-MM-DD" }
+          - { name: presiding, label: Presiding, widget: string, required: false }
+          - { name: conducting, label: Conducting, widget: string, required: false }
+          - { name: chorister, label: Chorister, widget: string, required: false }
+          - { name: organist, label: Organist, widget: string, required: false }
+          - name: openingHymn
+            label: "Opening Hymn"
+            widget: object
+            fields:
+              - { name: number, label: "Hymn number", widget: string, required: false }
+              - { name: title, label: "Hymn title", widget: string, required: false }
+          - { name: invocation, label: Invocation, widget: string, required: false }
+          - { name: stakeBusiness, label: "Stake Business", widget: boolean, default: false }
+          - { name: wardBusiness, label: "Ward Business", widget: boolean, default: false }
+          - name: sacramentHymn
+            label: "Sacrament Hymn"
+            widget: object
+            fields:
+              - { name: number, label: "Hymn number", widget: string, required: false }
+              - { name: title, label: "Hymn title", widget: string, required: false }
+          - name: testimonyMeeting
+            label: "Fast & Testimony meeting?"
+            widget: boolean
+            default: false
+            hint: "If on, the program shows 'Bearing of Testimonies' and hides the speakers below."
+          - name: speakersBeforeHymn
+            label: "Speakers (before the intermediate hymn)"
+            widget: list
+            required: false
+            summary: "{{fields.name}}"
+            field: { name: name, label: Name, widget: string }
+          - name: intermediateHymn
+            label: "Intermediate Hymn"
+            widget: object
+            required: false
+            fields:
+              - { name: number, label: "Hymn number", widget: string, required: false }
+              - { name: title, label: "Hymn title", widget: string, required: false }
+          - name: musicalNumber
+            label: "Musical Number (instead of an intermediate hymn)"
+            widget: string
+            required: false
+          - name: speakersAfterHymn
+            label: "Speakers (after the intermediate hymn)"
+            widget: list
+            required: false
+            summary: "{{fields.name}}"
+            field: { name: name, label: Name, widget: string }
+          - name: closingHymn
+            label: "Closing Hymn"
+            widget: object
+            fields:
+              - { name: number, label: "Hymn number", widget: string, required: false }
+              - { name: title, label: "Hymn title", widget: string, required: false }
+          - { name: benediction, label: Benediction, widget: string, required: false }
+
+  # ----------------------------------------------------------------------
+  - name: bulletin_text
+    label: "Bulletin Text"
+    delete: false
+    files:
+      - name: announcements
+        label: Announcements
+        file: "src/content/announcements.md"
+        description: "Appears on the website and in the printed bulletin. Keep it tight — long items may not fit the printed sheet."
+        fields:
+          - { name: body, label: Announcements, widget: markdown }
+      - name: thought
+        label: "Thought"
+        file: "src/content/thought.md"
+        fields:
+          - { name: body, label: Thought, widget: markdown }
+      - name: schedule
+        label: "Meeting Schedule"
+        file: "src/content/schedule.md"
+        fields:
+          - { name: body, label: Schedule, widget: markdown }
+
+  # ----------------------------------------------------------------------
+  - name: missionaries
+    label: "Missionaries"
+    delete: false
+    editor:
+      preview: false
+    files:
+      - name: missionaries
+        label: "Current Missionaries"
+        file: "src/_data/missionaries.json"
+        fields:
+          - name: list
+            label: Missionaries
+            widget: list
+            summary: "{{fields.name}}"
+            fields:
+              - { name: name, label: Name, widget: string }
+              - { name: mission, label: Mission, widget: string }
+              - { name: email, label: "Email (optional)", widget: string, required: false }
+          - { name: stakeContact, label: "Stake contact line", widget: string, required: false }
+
+  # ----------------------------------------------------------------------
+  - name: settings
+    label: "Site Settings"
+    delete: false
+    editor:
+      preview: false
+    files:
+      - name: site
+        label: "Ward Info"
+        file: "src/_data/site.json"
+        fields:
+          - { name: title, label: "Ward name", widget: string }
+          - { name: church, label: "Church name", widget: string }
+          - { name: address, label: Address, widget: string }
+          - { name: sacramentTime, label: "Sacrament meeting time", widget: string }
+          - { name: url, label: "Site URL", widget: string }
+          - name: announcementsContact
+            label: "Announcements contact"
+            widget: object
+            fields:
+              - { name: name, label: Name, widget: string }
+              - { name: email, label: Email, widget: string }
+              - { name: deadline, label: Deadline, widget: string }
+          - { name: submissionFormUrl, label: "Submission form URL", widget: string }
+          - { name: missionPlanUrl, label: "Ward mission plan URL", widget: string }
+          - { name: missionaryIdeasUrl, label: "Missionary ideas doc URL", widget: string }
