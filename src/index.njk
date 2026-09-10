@@ -4,7 +4,7 @@ permalink: /index.html
 ---
 {% from "macros.njk" import programBlock, missionariesBlock %}
 
-<div class="bg-dark text-secondary px-4 py-5 text-center fronthero">
+<div class="bg-dark text-secondary px-4 py-5 text-center fronthero"{% if site.coverImage %} style="background-image: url('{{ site.coverImage }}')"{% endif %}>
   <div class="py-5">
     <br><br><br><br>
     <h1 class="display-5 fw-bold text-white text-shadow">{{ site.title }}</h1>

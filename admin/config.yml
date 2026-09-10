@@ -146,6 +146,11 @@ collections:
           - { name: address, label: Address, widget: string }
           - { name: sacramentTime, label: "Sacrament meeting time", widget: string }
           - { name: url, label: "Site URL", widget: string }
+          - name: coverImage
+            label: "Cover photo"
+            widget: image
+            required: false
+            hint: "Shown behind the title on the home page and on the front of the printed bulletin. Use a large landscape photo (JPG or PNG)."
           - name: announcementsContact
             label: "Announcements contact"
             widget: object

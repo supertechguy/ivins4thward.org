@@ -17,7 +17,7 @@ What you can edit:
 | Bulletin Text → Announcements | Announcements (website + printed bulletin) |
 | Bulletin Text → Thought / Meeting Schedule | Those two sections |
 | Missionaries | The current-missionaries list |
-| Site Settings | Address, meeting time, contact info |
+| Site Settings | Address, meeting time, contact info, cover photo |
 
 ## Printing the Sunday bulletin
 

@@ -88,7 +88,7 @@ eleventyExcludeFromCollections: true
       <p class="cover__of">of</p>
       <p class="cover__church">{{ site.church }}</p>
     </div>
-    <img class="cover__img" src="/christ_heals.jpeg" alt="">
+    {% if site.coverImage %}<img class="cover__img" src="{{ site.coverImage }}" alt="">{% endif %}
     <div class="cover__meta">
       <p><strong>{{ program.date | bulletinDate }}</strong></p>
       <p>Sacrament Meeting begins at {{ site.sacramentTime }}</p>
