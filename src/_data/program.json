@@ -1,19 +1,35 @@
 {
-  "date": "2026-09-06",
+  "date": "2026-09-13T21:54:00",
   "presiding": "Bishop Jake Nielsen",
   "conducting": "Brother Barry Verespey",
-  "chorister": "Brother Than Johnson",
+  "chorister": "BrotherTravis Ridd",
   "organist": "Sister Jaime Nielsen",
-  "openingHymn": { "number": "252", "title": "Put Your Shoulder to the Wheel" },
-  "invocation": "Brother Jim Lutes",
+  "openingHymn": {
+    "number": "243",
+    "title": "Let Us All Press On"
+  },
+  "invocation": "Sister Katelyn Radmall",
   "stakeBusiness": true,
   "wardBusiness": true,
-  "sacramentHymn": { "number": "1008", "title": "Bread of Life, Living Water" },
-  "testimonyMeeting": true,
-  "speakersBeforeHymn": [],
-  "intermediateHymn": { "number": "", "title": "" },
+  "sacramentHymn": {
+    "number": "1009",
+    "title": "Gethsemane"
+  },
+  "testimonyMeeting": false,
+  "speakersBeforeHymn": [
+    "Brother Mark Stevens"
+  ],
+  "intermediateHymn": {
+    "number": "239",
+    "title": "Choose the Right"
+  },
   "musicalNumber": "",
-  "speakersAfterHymn": [],
-  "closingHymn": { "number": "223", "title": "Have I Done Any Good" },
-  "benediction": "Sister Brielle Broadhead"
+  "speakersAfterHymn": [
+    "Brother Shad Johnsen"
+  ],
+  "closingHymn": {
+    "number": "237",
+    "title": "Do What is Right"
+  },
+  "benediction": "Brother Shawn Duford"
 }
