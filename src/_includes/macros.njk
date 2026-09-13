@@ -16,7 +16,7 @@
 
 {% macro speakers(list) -%}
   {%- for s in list -%}
-    {{ row("Speaker" if list.length == 1 else ("Youth Speaker" if s.youth else "Speaker"), s.name) }}
+    {{ row("Speaker", s) }}
   {%- endfor -%}
 {%- endmacro %}
 
