@@ -74,9 +74,11 @@ eleventyExcludeFromCollections: true
   /* ---- Back cover ---- */
   .back { page-break-before: always; }
   .back__inner { display: flex; flex-direction: column; height: 100%; text-align: center; }
-  .back__thought { margin: auto 0; font-size: 10pt; }
+  .back__notes { display: flex; flex-direction: column; flex: 1 1 auto; min-height: 0; text-align: left; }
+  .back__notes-box { flex: 1 1 auto; border: 1pt solid #000; }
+  .back__thought { margin-top: 10pt; font-size: 10pt; }
   .back__thought blockquote { font-style: italic; margin: 0 0 8pt; }
-  .back__foot { font-size: 7.5pt; word-break: break-all; margin: 0; }
+  .back__foot { font-size: 7.5pt; word-break: break-all; margin: 4pt 0 0; }
 </style>
 </head>
 <body>
@@ -88,7 +90,7 @@ eleventyExcludeFromCollections: true
       <p class="cover__of">of</p>
       <p class="cover__church">{{ site.church }}</p>
     </div>
-    {% if site.coverImage %}<img class="cover__img" src="{{ site.coverImage }}" alt="">{% endif %}
+    {% if site.programImage %}<img class="cover__img" src="{{ site.programImage }}" alt="">{% endif %}
     <div class="cover__meta">
       <p><strong>{{ program.date | bulletinDate }}</strong></p>
       <p>Sacrament Meeting begins at {{ site.sacramentTime }}</p>
@@ -112,6 +114,10 @@ eleventyExcludeFromCollections: true
   {# Panel 4 — back cover #}
   <section class="panel back">
     <div class="back__inner">
+      <div class="back__notes">
+        <h2 class="section-title">Notes &amp; Impressions</h2>
+        <div class="back__notes-box"></div>
+      </div>
       <div class="back__thought">{{ copy.thought | safe }}</div>
       <p class="back__foot">
         {{ site.title }} &nbsp;&middot;&nbsp; {{ site.url | replace("https://", "") }}<br>
