@@ -1,23 +1,23 @@
 {
-  "date": "2026-09-13T21:54:00",
+  "date": "2026-09-20T21:54:00",
   "presiding": "Bishop Jake Nielsen",
-  "conducting": "Brother Jon Hindes",
+  "conducting": "Brother Barry Verespey",
   "chorister": "Brother Travis Ridd",
   "organist": "Sister Jaime Nielsen",
   "openingHymn": {
-    "number": "243",
-    "title": "Let Us All Press On"
+    "number": "229",
+    "title": "Today, While the Sun Shines"
   },
-  "invocation": "Sister Katelyn Radmall",
+  "invocation": "Brother Dick Eldredge",
   "stakeBusiness": true,
   "wardBusiness": true,
   "sacramentHymn": {
-    "number": "1009",
-    "title": "Gethsemane"
+    "number": "1016",
+    "title": "Behold the Wounds in Jesus Hands"
   },
   "testimonyMeeting": false,
   "speakersBeforeHymn": [
-    "Brother Mark Stevens"
+    "Sister Avery Nickle"
   ],
   "intermediateHymn": {
     "number": "239",
@@ -25,11 +25,11 @@
   },
   "musicalNumber": "",
   "speakersAfterHymn": [
-    "Brother Shad Johnsen"
+    "Brother Robert Proffit"
   ],
   "closingHymn": {
-    "number": "237",
-    "title": "Do What is Right"
+    "number": "259",
+    "title": "Hope of Israel"
   },
-  "benediction": "Brother Shawn Duford"
+  "benediction": "Sister Laurie Nelson"
 }
