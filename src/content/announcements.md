@@ -1,14 +1,9 @@
 **Come, Follow Me — this month**
 
-- **September 7–13:** "He Shall Direct Thy Paths" — Proverbs 1–4; 15–16; 22; 31; Ecclesiastes 1–3; 11–12
-- **September 14–20:** "God Is My Salvation" — Isaiah 1–12
 - **September 21–27:** "A Marvellous Work and a Wonder" — Isaiah 13–14; 22; 24–30; 35
 
 **Elders Quorum & Relief Society lessons this month**
 
-- **9/6** — EQ / RS Presidencies
-- **9/13** — "I Feel My Savior's Love" by Pedro X. Larreal
-- **9/20** — "The Character of Christ" by D. Todd Christofferson
 - **9/27** — "Follow the Prophet; He Knows the Way" by Michael John U. Teh
 
 **Senior Service & Senior Missionary opportunities** — Want to know more about Senior Service or Senior Away-From-Home missions? Contact Alan & Linda Miller, Stake Senior Missionary Specialists: 801-381-6094 or 801-450-6598. https://qr.generatorqr.com/7HjRvifKh
