@@ -10,7 +10,7 @@
 
 **Utah Education Initiative** — Wondering what a Stake Education Mentor is, or who is assigned to our ward? Talk to your mentor — they would love to explain more.
 
-**Dixie Technical College** — Looking to jumpstart your education, upgrade your employment, or find a new career fast? Dixie Tech has many programs that can be finished in less than a year (for example, an 8-month Customer Relations Management program). Scholarships and financial aid are available, and many programs are free to high school students. For more information, contact the Education Mentor in your ward, or Mark and Donna Rigby, Ivins Utah Stake Education Specialists, 385-231-4614.
+**Jumpstart your education or career with Dixie Tech! -&#32;**Many programs can be completed in less than a year, including the 8-month Customer Relations Management program. Scholarships and Financial Aid are available and many programs are free for high school student. Contact your ward Education Mentor or Ivins Utah Stake Education Specialist Mark and Donna Rigby at 385-231-4614
 
 **Temple night** — The Ivins 4th Ward temple night is Saturday. Target session is 6:00 PM at the St. George Temple, but feel free to attend any time that day or week. That evening there is also a ward social at the Jared and Megan Bringhurst home at 7:45 PM.
 
