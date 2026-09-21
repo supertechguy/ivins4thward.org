@@ -12,7 +12,7 @@
 
 **Jumpstart your education or career with Dixie Tech! -&#32;**Many programs can be completed in less than a year, including the 8-month Customer Relations Management program. Scholarships and Financial Aid are available and many programs are free for high school student. Contact your ward Education Mentor or Ivins Utah Stake Education Specialist Mark and Donna Rigby at 385-231-4614
 
-**Temple night** — The Ivins 4th Ward temple night is Saturday. Target session is 6:00 PM at the St. George Temple, but feel free to attend any time that day or week. That evening there is also a ward social at the Jared and Megan Bringhurst home at 7:45 PM.
+**Ivins 4th Ward Temple night**- this Saturday Target session: 6pm at the St. George Temple. Feel free to attend any time that day or week. A Ward Social will be held at Jared and Megan Bringhurst home at 7:45pm.
 
 **Single adult activities** — Please review the link for single adult activities in the area: https://utahsouthsingleadults.com
 
