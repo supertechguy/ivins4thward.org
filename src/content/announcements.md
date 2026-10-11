@@ -6,7 +6,9 @@
 
 **Elders Quorum & Relief Society lessons this month**
 
-- **9/27** — "Follow the Prophet; He Knows the Way" by Michael John U. Teh
+- 10/11 “I Glory in My Jesus” by Aaron T. Hall
+- 10/18 “He is Risen” by Ronald A. Rasband
+- 10/25 “Come Unto Christ-Together” by Tanilea B. Wakolo
 
 **Senior Service & Senior Missionary opportunities** — Want to know more about Senior Service or Senior Away-From-Home missions? Contact Alan & Linda Miller, Stake Senior Missionary Specialists: 801-381-6094 or 801-450-6598. https://qr.generatorqr.com/7HjRvifKh
 
