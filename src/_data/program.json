@@ -1,28 +1,32 @@
 {
-  "date": "2026-09-27T21:54:00",
+  "date": "2026-10-11T21:54:00",
   "presiding": "Bishop Jake Nielsen",
-  "conducting": "Brother Barry Verespey",
+  "conducting": "Bishop Jake Nielsen",
   "chorister": "Brother Than Johnson",
   "organist": "Sister Jaime Nielsen",
   "openingHymn": {
-    "number": "1015",
-    "title": "”Oh The Deep, Deep, Love of Christ”"
+    "number": "256",
+    "title": "\"As Zion’s Youth in Latter Days”"
   },
-  "invocation": "Sister Lisa Steven’s",
+  "invocation": "Brother Frank Johnson",
   "stakeBusiness": false,
   "wardBusiness": false,
   "sacramentHymn": {
-    "number": "196",
-    "title": "“Jesus, Once of Humble Birth”"
+    "number": "169",
+    "title": "“As Now We Take the Sacrament”"
   },
   "testimonyMeeting": true,
-  "speakersBeforeHymn": [],
+  "speakersBeforeHymn": [
+    "Sister Morgan Nielsen"
+  ],
   "intermediateHymn": null,
-  "musicalNumber": "",
-  "speakersAfterHymn": [],
+  "musicalNumber": "“With Royal Praise” By Morgan Nielsen",
+  "speakersAfterHymn": [
+    "Brother Jon Hindes"
+  ],
   "closingHymn": {
-    "number": "267",
-    "title": "“How Wondrous and Great”"
+    "number": "41",
+    "title": "“Let Zion in Her Beauty”"
   },
-  "benediction": "Brother El Ray Robinson"
+  "benediction": "Sister Cathy Kleiner"
 }
