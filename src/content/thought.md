@@ -1,3 +1,3 @@
-> The path of discipleship often resembles climbing a mountain. The shortest path to the top is not always the most appropriate and often not the safest either. Thus, we must choose the firm and safe path, even if it is sometimes the longest and most demanding one. Jesus Christ and His restored gospel constitute that safe path that leads us to the true summit.
+Do you want to be happy? Forget yourself and get lost in this great cause. Lend your efforts to helping people. Cultivate a spirit of forgiveness in your heart against any who might have offended you. Look to the Lord and live and work to lift and serve His sons and daughters. You will come to know a happiness that you have never known before if you will do that.
 
-— Elder Eduardo F. Ortega, Of the Seventy — General Conference, April 2026
+— From the Life of Gordon B. Hinckley
