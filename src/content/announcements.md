@@ -1,12 +1,9 @@
-**Come, Follow Me — this month**
+**Come, Follow Me — this mont**h
 
-- October 12–18: “The Redeemer Shall Come to Zion”[Isaiah 58–66](https://www.churchofjesuschrist.org/study/scriptures/ot/isa/58?lang=eng)
 - October 19–25: “Before I Formed Thee in the Belly I Knew Thee”[Jeremiah 1–3](https://www.churchofjesuschrist.org/study/scriptures/ot/jer/1?lang=eng); [7](https://www.churchofjesuschrist.org/study/scriptures/ot/jer/7?lang=eng); [16–18](https://www.churchofjesuschrist.org/study/scriptures/ot/jer/16?lang=eng); [20](https://www.churchofjesuschrist.org/study/scriptures/ot/jer/20?lang=eng)
-- 
 
 **Elders Quorum & Relief Society lessons this month**
 
-- 10/11 “I Glory in My Jesus” by Aaron T. Hall
 - 10/18 “He is Risen” by Ronald A. Rasband
 - 10/25 “Come Unto Christ-Together” by Tanilea B. Wakolo
 
