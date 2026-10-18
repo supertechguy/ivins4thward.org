@@ -1,32 +1,32 @@
 {
-  "date": "2026-10-11T12:48:00",
+  "date": "2026-10-18T12:48:00",
   "presiding": "Bishop Jake Nielsen",
   "conducting": "Bishop Jake Nielsen",
-  "chorister": "Brother Than Johnson",
+  "chorister": "Sister Lucie Hale",
   "organist": "Sister Jaime Nielsen",
   "openingHymn": {
-    "number": "256",
-    "title": "\"As Zion’s Youth in Latter Days”"
+    "number": "254",
+    "title": "\"True to the Faith”"
   },
-  "invocation": "Brother Frank Johnson",
+  "invocation": "Sister Eliot’s McCowan",
   "stakeBusiness": false,
   "wardBusiness": false,
   "sacramentHymn": {
-    "number": "169",
-    "title": "“As Now We Take the Sacrament”"
+    "number": "170",
+    "title": "“God, Our Father, Hear Us Pray”"
   },
   "testimonyMeeting": false,
   "speakersBeforeHymn": [
-    "Sister Morgan Nielsen"
+    "Brother Sterling Simkins"
   ],
   "intermediateHymn": null,
-  "musicalNumber": "“With Royal Praise” By Morgan Nielsen",
+  "musicalNumber": "285 “God Moves in Mysterious Ways”",
   "speakersAfterHymn": [
-    "Brother Jon Hindes"
+    "Brother Bill Boehm"
   ],
   "closingHymn": {
-    "number": "41",
-    "title": "“Let Zion in Her Beauty”"
+    "number": "1014",
+    "title": "“My Shepherd Will Supply My Need”"
   },
-  "benediction": "Sister Cathy Kleiner"
+  "benediction": "Brother Devin Radmallp"
 }
